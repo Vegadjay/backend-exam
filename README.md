@@ -1,3 +1,8 @@
+Server is live :- 
+1) http://13.61.147.8:8080/auth/users
+2) https://backend.jayvegad.xyz/auth/users
+  
+
 <!-- User Api -->
 
 Create a new user:- /auth/register
