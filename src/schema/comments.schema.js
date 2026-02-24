@@ -1,13 +1,7 @@
 import mongoose from "mongoose";
 
-const userSchema = mongoose.Schema(
+const commentSchema = mongoose.Schema(
   {
-    id: {
-      type: Number,
-      required: true,
-      unique: true,
-      autoIncrement: true,
-    },
     ticket_id: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Ticket",
@@ -32,6 +26,6 @@ const userSchema = mongoose.Schema(
   },
 );
 
-const User = mongoose.model("User", userSchema);
+const Comment = mongoose.model("Comment", commentSchema);
 
-export default User;
+export default Comment;

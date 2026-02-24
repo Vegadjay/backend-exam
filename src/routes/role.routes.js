@@ -3,6 +3,7 @@ import { CreateRole, GetAllRoles } from "../controllers/role.controller.js";
 
 const router = express.Router();
 
+// Optional API
 router.get("/getrole", GetAllRoles);
 router.post("/register", CreateRole);
 

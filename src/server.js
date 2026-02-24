@@ -12,11 +12,7 @@ configDotenv();
 
 app.use(express.json());
 app.use(morgan("dev"));
-
 app.use(AppRouter);
-app.get("/", (req, res) => {
-  res.send("Hello world from server");
-});
 
 app.listen(PORT, () => {
   console.log("Server is runnnig on port", PORT);
